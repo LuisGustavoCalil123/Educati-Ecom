@@ -1,0 +1,23 @@
+body{
+    box-sizing: border-box;
+    background: url(../Imagens/Abstract-Blue-Wave-Transparent-Background.png);
+    background-size: 100%;
+
+}
+button.btn-btn-primary {
+    width: 600px;
+    height: 50px;
+    background-color: #2f88ff;
+    border-radius: 15px;
+    color: #ffffff;
+  }
+
+  button.btn-primary {
+    width: 600px;
+    height: 50px;
+    background-color: #2f88ff;
+    border-radius: 15px;
+    color: #ffffff;
+  }
+ 
+  

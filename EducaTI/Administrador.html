@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adiministrador/EDUCA TI</title>
+    <link rel="stylesheet" href="/Administrador.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Logo -->
+        <div class="logo">
+          <img src="/Imagens/logo-branca.png" alt="">
+        </div>
+        <!-- Menu Responsivo -->
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#mudar">Modificar Usuários</a></li>
+          <li><a href="#">Turmas</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Conteúdo 1 -->
+    <main>
+      <section class="corpo-1">
+        <!-- Cabeçalho -->
+        <div class="conteúdo-1" >
+          <div class="titulo" id="mudar"><h2>Cadastrar Usúario para a Sala</h2></div>
+          <div class="sala">
+            <div class="bloco">
+              <p id="mostrar-sala"></p>
+            </div>
+          </div>
+          <!-- Dropdown -->
+          <div class="menu-bar">
+            <ul>
+                <li> <p>Turmas</p><i class="fas fa-caret-down"></i>
+                    <div class="dropdown-menu">
+                        <ul>
+                          <li>
+                            <p>1 Ano<i class="fas fa-caret-right"></i></p>
+                            <div class="dropdown-menu-1">
+                              <ul>
+                                <li onclick="ano1a()">1 Ano A</li>
+                                <li onclick="ano1b()">1 Ano B</li>
+                              </ul>
+                            </div>
+                          </li>                 
+                        </ul>
+                        <ul>
+                            <li>
+                              <p>2 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano2a()">2 Ano A</li>
+                                  <li onclick="ano2b()">2 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>3 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano3a()">3 Ano A</li>
+                                  <li onclick="ano3b()">3 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>4 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano4a()">4 Ano A</li>
+                                  <li onclick="ano4b()">4 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>5 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano5a()">5 Ano A</li>
+                                  <li onclick="ano5b()">5 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>6 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano6a()">6 Ano A</li>
+                                  <li onclick="ano6b()">6 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>7 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano7a()">7 Ano A</li>
+                                  <li onclick="ano7b()">7 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>8 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano8a()">8 Ano A</li>
+                                  <li onclick="ano8b()">8 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>9 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano9a()">9 Ano A</li>
+                                  <li onclick="ano9b()">9 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                    </div>
+                </li>
+            </ul>
+            </div>
+            <div class="formulario">
+              <div class="esquerda">
+              <div class="radio-grupo">
+                <label class="radio">
+                  <input type="radio" name="male" value="gender">
+                  Aluno
+                  <span></span>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="male" value="gender">
+                  Professor
+                  <span></span>
+                </label>
+                
+              </div> 
+                <input type="text" class="barra1" placeholder="Repetir Email">
+                <input type="text" class="barra1" placeholder="Criar Senha">
+                <input type="text" class="barra1" placeholder="Nome da Mãe">
+
+              </div>
+              <div class="direita">
+                <input type="text" class="barra1" placeholder="Criar Email">
+                <input type="text" class="barra1" placeholder="Repetir Senha">
+                <input type="text" class="barra1" placeholder="Nome Completo ">
+                <input type="number" class="barra1" placeholder="CPF">
+              </div>
+            </div>
+            <div class="texto3">
+              Dados Cadastrais
+            </div>
+            <div class="center">
+            <div class="formulario2">
+              <div class="esquerda2">
+                Data de Nascimento
+                <input type="date" class="barra3" placeholder="Data de Nascimento">
+                <input type="text" class="barra3" placeholder="Rua">
+                <input type="text" class="barra3" placeholder="Bairro">
+                <input type="text" class="barra3" placeholder="Estado">
+              </div>
+              <div class="direita2">
+                Telefone/ Celular
+                <input type="number" class="barra3" >
+                <input type="number" class="barra3" placeholder="CEP">
+                <input type="number" class="barra3" placeholder="Complemento">
+                <input type="number" class="barra3" placeholder="Cidade">
+              </div>
+            </div>
+            </div>
+    <script src="/Administrador.js"></script>
+  </body>
+  </html>
